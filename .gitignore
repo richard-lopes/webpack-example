@@ -1,0 +1,49 @@
+# Mac
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Misc
+*~
+*.bak
+*.log
+*.tmp
+*.diff
+*.err
+*.orig
+*.rej
+*.swo
+*.swp
+*.zip
+*.tar
+
+# IDE
+.idea/
+*.ipr
+*.iws
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+*.suo
+*.user
+*.sln
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+
+# Build artifacts
+node_modules/
+tmp/
+*.map
+
+# DVCS
+.hg
+.svn
+.CVS
