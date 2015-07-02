@@ -9,8 +9,7 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <h1>Module yo</h1>
-        <div style={{float: 'right'}}><Link to='login'>Login</Link></div>
+        <h1>Example</h1>
         <Link to='example'>Go to the Example page...</Link>
         <RouteHandler/>
       </div>
