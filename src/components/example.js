@@ -1,11 +1,9 @@
 import React from 'react';
 import connectToStores from 'alt/utils/connectToStores';
-import changeHandler from 'utils/changeHandler';
 import DummyStore from 'stores/dummyStore';
 import DummyActions from 'actions/dummyActions';
 
 @connectToStores
-@changeHandler
 class Example extends React.Component {
   constructor(props) {
     super(props);
@@ -25,10 +23,15 @@ class Example extends React.Component {
   render() {
     return (
       <div>
-        <input type="text" value={this.state.name} onChange={evt => this.onChange('name', evt, DummyActions.updateName)}/>
+        <input type="text" value={this.state.name} onChange={this.onChange}/>
         <h1>It works: {this.props.name}</h1>
       </div>
     );
+  }
+
+  onChange = evt => {
+    this.setState({name: evt.target.value});
+    DummyActions.updateName(evt.target.value);
   }
 }
 
