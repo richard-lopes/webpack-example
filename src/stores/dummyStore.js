@@ -1,14 +1,10 @@
-/**
- * Copyright (C) MYOB - 2015
- */
-
 import flux from 'control';
 import {createStore, bind} from 'alt/utils/decorators';
 import actions from 'actions/dummyActions';
 
 @createStore(flux)
 class DummyStore {
-  name = 'dummy';
+  name = 'awesome';
 
   @bind(actions.updateName)
   updateName(name) {

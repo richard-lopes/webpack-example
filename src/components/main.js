@@ -1,7 +1,3 @@
-/**
- * Copyright (C) MYOB - 2015
- */
-
 import React from 'react';
 import {RouteHandler, Link} from 'react-router';
 
